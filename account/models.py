@@ -21,4 +21,10 @@ class Account(models.Model):
 class Transaction(models.Model):
 	account = models.ForeignKey('Account')
 	amount = models.DecimalField(max_digits=6, decimal_places=2)
+
+class UserProfile(models.Model):
+	user = models.OneToOneField(User,null=True)
+	message = models.TextField()
+	picture = models.ImageField(upload_to='profile_images',blank=True)
+
 	

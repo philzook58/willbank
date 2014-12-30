@@ -84,6 +84,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
+)
+
+MEDIA_ROOT = (
+    os.path.join(BASE_DIR, "media")
+   
+)
+
+
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
@@ -91,4 +102,4 @@ TEMPLATE_DIRS = (
     'wmbank/templates',
 )
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/account/'

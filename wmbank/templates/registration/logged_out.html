@@ -1,9 +1,16 @@
-<html>
+{%extends "base.html"%}
 
-<body>
-GOODBYE BUDDO
+{%block content%}
+<h1>GOODBYE BUDDO </h1>
 
-</body>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Click Me!</button>
 
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      You little bitch.
+    </div>
+  </div>
+</div>
 
-</html>
+{%endblock%}
